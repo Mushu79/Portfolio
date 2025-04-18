@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .project-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-icon {
+            font-size: 3rem;
+            color: #007bff;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .project-card .card-body {
+            padding: 1.5rem;
+        }
+        .project-card .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        .project-card .card-text {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+        .tech-stack {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+        .tech-stack span {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            margin: 0.25rem;
+            background-color: #f8f9fa;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .project-links a {
+            margin-right: 1rem;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .project-links a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="py-5" style="margin-top: 60px;">
+        <div class="container">
+            <h2 class="text-center mb-5">My Projects</h2>
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="card-body">
+                            <div class="project-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h5 class="card-title">Portfolio Website</h5>
+                            <p class="card-text">A responsive portfolio website built with HTML, CSS, and JavaScript. Features a modern design with smooth animations and interactive elements.</p>
+                            <div class="tech-stack">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="card-body">
+                            <div class="project-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h5 class="card-title">Mobile App</h5>
+                            <p class="card-text">A cross-platform mobile application developed using React Native. Includes features like user authentication, real-time updates, and push notifications.</p>
+                            <div class="tech-stack">
+                                <span>React Native</span>
+                                <span>Firebase</span>
+                                <span>Redux</span>
+                                <span>Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="card-body">
+                            <div class="project-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h5 class="card-title">E-commerce Platform</h5>
+                            <p class="card-text">A full-stack e-commerce platform with features like product management, shopping cart, payment integration, and order tracking.</p>
+                            <div class="tech-stack">
+                                <span>MERN Stack</span>
+                                <span>MongoDB</span>
+                                <span>Express.js</span>
+                                <span>Stripe API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="card-body">
+                            <div class="project-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h5 class="card-title">AI Chatbot</h5>
+                            <p class="card-text">An intelligent chatbot powered by machine learning algorithms. Capable of natural language processing and providing contextual responses.</p>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>NLP</span>
+                                <span>Flask</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="card-body">
+                            <div class="project-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h5 class="card-title">Data Analytics Dashboard</h5>
+                            <p class="card-text">A comprehensive analytics dashboard for visualizing and analyzing business data. Includes interactive charts and real-time data updates.</p>
+                            <div class="tech-stack">
+                                <span>React</span>
+                                <span>D3.js</span>
+                                <span>Python</span>
+                                <span>AWS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="card-body">
+                            <div class="project-icon">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <h5 class="card-title">Game Development</h5>
+                            <p class="card-text">A 2D platformer game developed using Unity. Features include character animation, level design, and sound effects.</p>
+                            <div class="tech-stack">
+                                <span>Unity</span>
+                                <span>C#</span>
+                                <span>Blender</span>
+                                <span>Adobe Photoshop</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
